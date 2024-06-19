@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
+
+import Footer from './shared/Footer/Footer';
+
+import "bootstrap/dist/css/bootstrap.min.css";
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -26,6 +30,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Footer />
     </div>
   );
 }

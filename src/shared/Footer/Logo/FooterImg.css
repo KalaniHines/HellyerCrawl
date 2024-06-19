@@ -1,0 +1,30 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.7rem;
+  margin-left: 45px;
+}
+
+.footer-logo {
+  width: auto;
+  box-shadow: 2px 3px rgba(60, 56, 56, 0.611);
+}
+
+.copyright {
+  font-size: 0.6rem;
+  margin-top: 6px;
+  color: #3c3838;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .copyright {
+    font-size: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+}

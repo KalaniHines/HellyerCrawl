@@ -1,0 +1,19 @@
+.address-container {
+  display: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.address-link:hover {
+  box-shadow: 0 1px 0 aqua;
+  color: aqua;
+}
+
+.address-link {
+  font-size: 20px;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  color: #d33eb5;
+  text-decoration: none;
+}
