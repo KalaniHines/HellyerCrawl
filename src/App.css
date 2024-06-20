@@ -3,9 +3,14 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
+  width: auto; /* Maintain aspect ratio */
   pointer-events: none;
+  border-radius: 50%;
+  margin-top: 2rem; /* Add padding above the logo */
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); << for a shadow under the spinner*/
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,7 +19,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #9cb8f0; << background of the entire page*/
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +41,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  margin-top: 5rem;
+  padding-bottom: 1rem;
 }

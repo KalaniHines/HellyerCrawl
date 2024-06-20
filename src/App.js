@@ -1,36 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import logoImage from "./shared/Images/hellyerLogo.png";
 
-import Footer from './shared/Footer/Footer';
+import Footer from "./shared/Footer/Footer";
+import Racing from "./userPages/pages/Racing";
+import MainNavigation from "./shared/Navigation/MainNavigation";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Redirect
-// } from "react-router-dom";
-
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img
+          src={logoImage}
+          className="App-logo"
+          alt="Hellyer Velodrome Logo"
+        />
       </header>
-      <Footer />
+      <Router>
+        <MainNavigation />
+        <main>
+          <Routes>
+            {/* <Route path="/" element={<Navigate to="/racing" replace />} />
+            <Route path="/racing" element={<Racing />} /> */}
+            <Route path="/racing" element={<Racing />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </div>
   );
 }

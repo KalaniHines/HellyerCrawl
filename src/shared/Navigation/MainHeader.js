@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
 
-function MainHeader() {
-    return (
-        <h1>Main Header</h1>
-    )
+// import logoImage from "../Images/hellyerLogo.png";
+import "./MainHeader.css";
+
+function MainHeader(props) {
+  return (
+    <header className="main-header">
+      {/* <img src={logoImage} alt="Hellyer Velodrome Logo" className="logo" /> */}
+      {props.children}
+    </header>
+  );
 }
 
 export default MainHeader;
