@@ -8,8 +8,8 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer text-light py-3 footer-background">
-      <div className="container">
+    <footer className="footer text-light py-3 footer-background text-align">
+      <div className="container footer text-light py-3 footer-background text-align">
         <div className="row">
           <div className="col-md-3 d-flex flex-column margin-bottom">
             <p style={{ fontSize: "25px" }}>Follow the Track!</p>

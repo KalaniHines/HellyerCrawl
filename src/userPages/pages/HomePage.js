@@ -6,13 +6,13 @@ import "./HomePage.css";
 
 function Home() {
     return (
-      <body className="home-content">
+      <div className="home-content">
         <img
           src={spinner}
           className="spinner-image"
           alt="Hellyer Velodrome Logo"
         />
-        </body>
+        </div>
     );
   }
 

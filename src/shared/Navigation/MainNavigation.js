@@ -1,33 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
-//import MainHeader from "./MainHeader";
-import logoImage from "../Images/hellyerLogo.png";
-import "./MainNavigation.css";
-
-function MainNavigation(props) {
-  return (
-    <>
-      {/* <h1 className="main-navigation__title">
-      Test
-      </h1> */}
-      <Link to="/home">
-        <img src={logoImage} alt="Hellyer Velodrome Logo" className="logo" />
-      </Link>
-      <button className="main-navigation__menu-button">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav>...</nav>
-    </>
-  );
-}
-
-export default MainNavigation;
-
-
 // import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 // import { Hamburger, Menu } from "react-burger-menu";
@@ -44,20 +14,83 @@ export default MainNavigation;
 //   };
 
 //   return (
+//     <>
+//       <MainHeader>
+//         <h1 className="main-navigation__title">
+//           <Link to="/home">
+//             <img
+//               src={logoImage}
+//               alt="Hellyer Velodrome Logo"
+//               className="logo"
+//             />
+//           </Link>
+//         </h1>
+//         <Hamburger isOpen={menuOpen} onOpen={handleMenuClick} />
+//         <Menu right isOpen={menuOpen} onOpen={handleMenuClick}>
+//           {/* Your navigation links here */}
+//         </Menu>
+
+//         <nav>...</nav>
+//       </MainHeader>
+//     </>
+//   );
+// }
+
+// export default MainNavigation;
+
+// import React, { useState } from "react";
+// import { Link } from "react-router-dom";
+
+// import MainHeader from "./MainHeader";
+// import NavLinks from "./NavLinks";
+// import logoImage from "../Images/hellyerLogo.png";
+// import "./MainNavigation.css";
+
+// function MainNavigation(props) {
+//   return (
 //     <MainHeader>
-//       <h1 className="main-navigation__title">
-//         <Link to="/">
+//       <div className="logo-container">
+//         <Link to="/home">
 //           <img src={logoImage} alt="Hellyer Velodrome Logo" className="logo" />
 //         </Link>
-//       </h1>
-//       <Hamburger isOpen={menuOpen} onOpen={handleMenuClick} />
-//       <Menu right isOpen={menuOpen} onOpen={handleMenuClick}>
-//         {/* Your navigation links here */}
-//       </Menu>
-
-//       <nav>...</nav>
+//       </div>
+//       <button className="main-navigation__menu-button">
+//         <span />
+//         <span />
+//         <span />
+//       </button>
+//       {/* this line had the <h1> with the title and link home</h1> */}
+//       {/* <nav className="main-navigation__header-nav">
+//         <NavLinks />
+//       </nav> */}
+//       <nav><NavLinks /></nav>
 //     </MainHeader>
 //   );
 // }
 
 // export default MainNavigation;
+import React from "react";
+import { Link } from "react-router-dom";
+
+import MainHeader from "./MainHeader";
+import NavLinks from "./NavLinks";
+import logoImage from "../Images/hellyerLogo.png";
+import "./MainNavigation.css";
+
+function MainNavigation(props) {
+  return (
+    <MainHeader>
+      <Link to="/">
+        <img src={logoImage} alt="Hellyer Velodrome Logo" className="logo" />
+      </Link>
+      <NavLinks />
+      {/* <button className="main-navigation__menu-button">
+        <span />
+        <span />
+        <span />
+      </button> */}
+    </MainHeader>
+  );
+}
+
+export default MainNavigation;
