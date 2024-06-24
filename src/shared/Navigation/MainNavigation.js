@@ -74,22 +74,33 @@ import { Link } from "react-router-dom";
 
 import MainHeader from "./MainHeader";
 import NavLinks from "./NavLinks";
+import SideDrawer from "./SideDrawer";
 import logoImage from "../Images/hellyerLogo.png";
 import "./MainNavigation.css";
 
 function MainNavigation(props) {
   return (
+    <>
+    <SideDrawer>
+      <nav className="main-navigation__drawer-nav">
+      <NavLinks />
+      </nav>
+    </SideDrawer>
     <MainHeader>
       <Link to="/">
         <img src={logoImage} alt="Hellyer Velodrome Logo" className="logo" />
       </Link>
-      <NavLinks />
-      {/* <button className="main-navigation__menu-button">
+      <div className="main-navigation__header-nav">
+        <NavLinks />
+      </div>
+      {/* <NavLinks /> */}
+      <button className="main-navigation__menu-button">
         <span />
         <span />
         <span />
-      </button> */}
+      </button>
     </MainHeader>
+    </>
   );
 }
 

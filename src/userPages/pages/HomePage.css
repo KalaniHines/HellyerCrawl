@@ -1,6 +1,6 @@
 .home-content {
   /* background-color: #9cb8f0; << background of the entire page*/
-  background-color: rgb(84, 205, 216);
+  background-color: rgba(122, 125, 125, 0.207);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -6,8 +6,12 @@
 }
 
 .address-link:hover {
-  box-shadow: 0 1px 0 aqua;
-  color: aqua;
+  /* box-shadow: 0 1px 0 aqua; this is the underline */
+  color: rgb(13, 13, 13);
+  font-weight: bold; /* Make the text bold */
+  font-style: italic; /* Make the text italic */
+  transform: translateY(-1px); /* Subtle upward movement */
+
 }
 
 .address-link {
@@ -16,4 +20,9 @@
   margin-bottom: 3px;
   color: #d33eb5;
   text-decoration: none;
+}
+
+.mailing-address-text {
+  color: rgb(38, 73, 233);
+  font-size: 17px;
 }

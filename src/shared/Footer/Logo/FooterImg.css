@@ -3,11 +3,12 @@
   flex-direction: column;
   margin-top: 0.7rem;
   margin-left: 45px;
+  margin-right: 45px;
 }
 
 .footer-logo {
   width: auto;
-  box-shadow: 2px 3px rgba(60, 56, 56, 0.611);
+  box-shadow: 2px 3px rgba(60, 56, 56, 0.431);
 }
 
 .copyright {
@@ -22,6 +23,7 @@
     justify-content: center;
     align-items: center;
     margin-left: 0;
+    margin-right: 0;
   }
   .copyright {
     font-size: 0.5rem;

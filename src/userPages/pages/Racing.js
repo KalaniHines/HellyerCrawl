@@ -1,9 +1,13 @@
 import React from "react";
 
+import hellyerCat from "../../shared/Images/hellYeahCat.png";
+import "./Racing.css";
+
 function Racing() {
     return (
-        <div className="center">
-            <h1>Racing</h1>
+        <div className="racing-content">
+        {/* not pulling from css rn */}
+            <img src={hellyerCat} alt="Hellyer Cat" />
         </div>
 
     )

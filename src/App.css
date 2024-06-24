@@ -3,6 +3,7 @@
   min-height: 100vh; /* Set minimum height for the app container */
   display: flex;
   flex-direction: column;
+  overflow: hidden; /*Added this, 6-24*/
 }
 footer {
   flex-shrink: 0;  /* Prevent footer from shrinking */
@@ -29,6 +30,6 @@ footer {
 
 main {
   margin-top: 5rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   /* **this was the line at the bottom of the app container */
 }
