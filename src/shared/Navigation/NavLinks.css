@@ -31,7 +31,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  .nav-links button {
+  /* .nav-links button {
     cursor: pointer;
     border: 1px solid #292929;
     color: #292929;
@@ -50,7 +50,7 @@
     color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
+  } */
 
   @media (min-width: 768px) {
     .nav-links {
@@ -67,7 +67,7 @@
       text-decoration: none;
     }
 
-    .nav-links button {
+    /* .nav-links button {
       border: 1px solid white;
       color: white;
       background: transparent;
@@ -77,5 +77,5 @@
     .nav-links button:active {
       background: #f8df00;
       color: #292929;
-    }
+    } */
   }

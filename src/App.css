@@ -10,26 +10,15 @@ footer {
 }
 
 
-/* .App-header {
-  background-color: rgb(255, 255, 255);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  >>took this out to fix header component,
-  >>now that it is created
-} */
-
 .App-link {
   color: #61dafb;
 }
 
 
-main {
+/* main {
   margin-top: 5rem;
-  /* padding-bottom: 1rem; */
-  /* **this was the line at the bottom of the app container */
-}
+  padding-bottom: 1rem;
+
+} */
+
+/* **this was the line at the bottom of the app container */

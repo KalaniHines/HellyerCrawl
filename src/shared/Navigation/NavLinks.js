@@ -1,47 +1,39 @@
-// import React from "react";
-// import { NavLink } from "react-router-dom";
-
-// import "./NavLinks.css";
-
-// function NavLinks(props) {
-//     return (
-//         <ul className="nav-links">
-//             <li>
-//                 <NavLink to="/home">Home</NavLink>
-//             </li>
-//             <li>
-//                 <NavLink to="/racing">Racing</NavLink>
-//             </li>
-//             <li>
-//                 <NavLink to="/training">Training</NavLink>
-//             </li>
-//         </ul>
-//     );
-// }
-
-// export default NavLinks;
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import "./NavLinks.css";
 
-function NavLinks(props) {
+function NavLinks({props, closeDrawer}) {
+  const handleClick = () => {
+    if (closeDrawer) {
+      closeDrawer();
+    }
+    // props.closeDrawer();
+    //console.log("close drawer: ", props.closeDrawer);
+  };
+
   return (
     <ul className="nav-links">
       <li>
-        <NavLink to="/home">Home</NavLink>
+        {/* <NavLink to="/home">Home</NavLink> */}
+        <NavLink to="/home" onClick={() => handleClick()}>
+          Home
+        </NavLink>
+
       </li>
       <li>
-        <NavLink to="/racing">Racing</NavLink>
+        <NavLink to="/racing" onClick={() => handleClick()}>Racing</NavLink>
       </li>
       <li>
-        <NavLink to="/training">Training</NavLink>
+        <NavLink to="/training" onClick={() => handleClick()}>Training</NavLink>
       </li>
       <li>
-        <NavLink to="/information">Information</NavLink>
+        <NavLink to="/information" onClick={() => handleClick()}
+        >Information</NavLink>
       </li>
       <li>
-        <NavLink to="/calendar">Calendar</NavLink>
+        <NavLink to="/calendar" onClick={() => handleClick()}
+        >Calendar</NavLink>
       </li>
     </ul>
   );
