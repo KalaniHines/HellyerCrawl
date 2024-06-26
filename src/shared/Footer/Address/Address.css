@@ -6,12 +6,11 @@
 }
 
 .address-link:hover {
-  /* box-shadow: 0 1px 0 aqua; this is the underline */
+  box-shadow: 0 1px 0 black;
   color: rgb(13, 13, 13);
-  font-weight: bold; /* Make the text bold */
-  font-style: italic; /* Make the text italic */
-  transform: translateY(-1px); /* Subtle upward movement */
-
+  font-weight: bold;
+  font-style: italic;
+  transform: translateY(-1px);
 }
 
 .address-link {

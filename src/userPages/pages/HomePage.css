@@ -1,5 +1,4 @@
 .home-content {
-  /* background-color: #9cb8f0; << background of the entire page*/
   background-color: rgba(122, 125, 125, 0.207);
   min-height: 100vh;
   display: flex;
@@ -11,24 +10,24 @@
 }
 
 .spinner-image {
-    height: 20vmin;
-    width: auto; /* Maintain aspect ratio */
-    pointer-events: none;
-    border-radius: 50%;
-    margin-top: 2rem; /* Add padding above the logo */
-  }
+  height: 20vmin;
+  width: auto;
+  pointer-events: none;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
 
-  @media (prefers-reduced-motion: no-preference) {
-    .spinner-image {
-      animation: App-logo-spin infinite 20s linear;
-    }
+@media (prefers-reduced-motion: no-preference) {
+  .spinner-image {
+    animation: App-logo-spin infinite 20s linear;
   }
+}
 
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}

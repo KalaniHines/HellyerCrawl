@@ -4,17 +4,14 @@ import hellyerCat from "../../shared/Images/hellYeahCat.png";
 import "./Racing.css";
 
 function Racing() {
-    return (
-        <div className="racing-content">
-        {/* not pulling from css rn */}
-            <img src={hellyerCat} alt="Hellyer Cat" />
-        </div>
-
-    )
+  return (
+    <div className="racing-content">
+      <img src={hellyerCat} alt="Hellyer Cat" />
+    </div>
+  );
 }
 
 export default Racing;
-
 
 // For now, the race tab should just be the link to Square: https://hellyervelodrome.square.site/training-sessions
 //Maybe have links to results on the page and we can import the race flyer carousel?

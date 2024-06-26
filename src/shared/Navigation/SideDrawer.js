@@ -1,11 +1,11 @@
 import React from "react";
+// import React, { forwardRef } from "react";
 import ReactDom from "react-dom";
 import { CSSTransition } from "react-transition-group";
 
 import "./SideDrawer.css";
 
 function SideDrawer(props) {
-
   const drawerRef = React.useRef(null);
 
   const content = (

@@ -4,60 +4,34 @@
   background: transparent;
   border: none;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  /* margin-right: 2rem; */
   padding-right: 1rem;
   cursor: pointer;
   align-items: center;
 }
 
-.main-navigation__menu-btn svg { /* Target the FontAwesome SVG */
-  color: red; /* Change the icon color */
+.main-navigation__menu-btn svg {
+  color: rgb(226, 20, 244);
 }
-
-/* .main-navigation__menu-btn span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: rgb(218, 16, 16);
-  margin-bottom: 5px;
-} */
 
 .logo-container {
-  display: flex; /* Allow for inline elements */
-  align-items: center; /* Align logo vertically */
+  display: flex;
+  align-items: center;
 }
-
-
-/* .main-navigation__title {
-  color: rgb(245, 243, 246);
-}
-
-.main-navigation__title a {
-  text-decoration: none;
-  color: rgb(58, 96, 245);
-} */
 
 .main-navigation__header-nav {
   display: none;
 }
 
-/* .main-navigation__drawer-nav {
-  height: 100%;
-} */
-
 @media (min-width: 768px) {
   .main-navigation__menu-btn {
     display: none;
-    /* padding-right: 15rem; */
   }
 
   .main-navigation__header-nav {
     display: block;
   }
 }
-
 
 /* .main-navigation__menu-btn.open {
   background-color: red;

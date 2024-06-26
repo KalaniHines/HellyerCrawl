@@ -1,5 +1,4 @@
 .training-content {
-  /* background-color: #9cb8f0; << background of the entire page*/
   background-color: rgb(84, 205, 216);
   min-height: 100vh;
   display: flex;
@@ -12,6 +11,6 @@
 
 @media (max-width: 768px) {
   .training-content {
-    padding-top: 8rem; /* Increased padding for mobile */
+    padding-top: 8rem;
   }
 }

@@ -12,15 +12,21 @@ function Footer() {
       <div className="footer text-light py-3 footer-background text-align">
         <div className="row">
           <div className="col-md-3 d-flex flex-column margin-bottom">
-            <p className="footer-text" style={{ fontSize: "25px" }}>Follow the Track!</p>
+            <p className="footer-text" style={{ fontSize: "25px" }}>
+              Follow the Track!
+            </p>
             <SocialMedia />
           </div>
           <div className="col-md-3 d-flex flex-column margin-bottom">
-            <p className="footer-text" style={{ fontSize: "25px" }}>Street Address</p>
+            <p className="footer-text" style={{ fontSize: "25px" }}>
+              Street Address
+            </p>
             <StreetAddress />
           </div>
           <div className="col-md-3 d-flex flex-column margin-bottom">
-            <p className="footer-text" style={{ fontSize: "25px" }}>Mailing Address</p>
+            <p className="footer-text" style={{ fontSize: "25px" }}>
+              Mailing Address
+            </p>
             <MailingAddress />
           </div>
           <div className="col-md-3">

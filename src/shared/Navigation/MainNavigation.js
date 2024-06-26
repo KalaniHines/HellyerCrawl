@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faXmark,
-  // faPersonBiking,
-  faBars,
-} from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 
 import MainHeader from "./MainHeader";
 import NavLinks from "./NavLinks";
@@ -15,7 +11,6 @@ import logoImage from "../Images/hellyerLogo.png";
 import "./MainNavigation.css";
 
 function MainNavigation() {
-
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
   const openDrawerHandler = () => {
@@ -29,11 +24,9 @@ function MainNavigation() {
   return (
     <>
       {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
-
       <SideDrawer show={drawerIsOpen} onCLick={closeDrawerHandler}>
         <nav className="main-navigation__drawer-nav">
-          <NavLinks closeDrawer={closeDrawerHandler}/>
-          {/* <NavLinks /> */}
+          <NavLinks closeDrawer={closeDrawerHandler} />
         </nav>
       </SideDrawer>
       <MainHeader>
@@ -59,13 +52,3 @@ function MainNavigation() {
 }
 
 export default MainNavigation;
-
-{/* <NavLinks /> */}
-        {/* {window.innerWidth <= 768 && (
-          <button
-            className="main-navigation__menu-button"
-            onClick={props.openDrawerHandler}
-          >
-            <FontAwesomeIcon icon={faBars} size="2x" />
-          </button>
-        )} */}
